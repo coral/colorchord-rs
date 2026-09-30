@@ -1,0 +1,27 @@
+# Cargo output (keep Cargo.lock for reproducible workspace checks).
+/target/
+**/target/
+*.profraw
+*.profdata
+/perf.data*
+
+# Local development assets and comparison tooling are not distributed.
+/assets/
+/tools/parity/
+
+# Local environment, credentials, and workspace tooling.
+.env
+.env.*
+!.env.example
+/.aws/
+/.codex/
+/.agents/
+/.idea/
+/.vscode/
+
+# Editor and OS leftovers.
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

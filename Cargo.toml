@@ -1,0 +1,39 @@
+[package]
+name = "colorchord-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Port of ColorChord audio analysis and note tracking to Rust"
+license = "MIT"
+readme = "README.md"
+documentation = "https://docs.rs/colorchord-rs"
+keywords = ["audio", "dsp", "music", "pitch", "simd"]
+categories = ["multimedia::audio", "algorithms"]
+include = [
+    "/src/**",
+    "/tests/**",
+    "/Cargo.toml",
+    "/Cargo.lock",
+    "/README.md",
+    "/LICENSE",
+    "/LICENSE-COLORCHORD",
+]
+
+[workspace]
+exclude = ["tools/parity"]
+resolver = "3"
+
+[features]
+default = ["simd"]
+simd = ["dep:fearless_simd"]
+
+[dependencies]
+dasp_sample = "0.11"
+rtrb = "0.4"
+fearless_simd = { version = "1.0", optional = true }
+
+[dev-dependencies]
+serde_json = "1"
+
+[[bench]]
+name = "pipeline"
+harness = false

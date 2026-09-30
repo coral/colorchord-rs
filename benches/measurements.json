@@ -1,0 +1,545 @@
+{
+  "measured_at": "2026-09-30",
+  "cpu": "AMD RYZEN AI MAX+ 395",
+  "logical_cpu": 2,
+  "rustc": "1.101.0-nightly (5c543b0b8 2026-09-29)",
+  "llvm": "23.1.1",
+  "flags": "Cargo release defaults; no target-cpu=native or fast-math",
+  "baseline": {
+    "architecture": "x86_64",
+    "results": [
+      {
+        "max_ns": 212998.26041666666,
+        "median_ns": 149880.46274038462,
+        "min_ns": 149146.24158653847,
+        "name": "quick-defaults/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 1312.124343946816,
+        "median_ns": 1305.7234070334262,
+        "min_ns": 1301.3997441013184,
+        "name": "quick-defaults/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 148126.66225961538,
+        "median_ns": 147966.578125,
+        "min_ns": 147699.39182692306,
+        "name": "quick-defaults/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 141.168971634543,
+        "median_ns": 140.99004741897886,
+        "min_ns": 140.77611654904464,
+        "name": "quick-defaults/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 364.65482788798136,
+        "median_ns": 364.4428115889213,
+        "min_ns": 363.5285933259015,
+        "name": "quick-defaults/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 1845170.34375,
+        "median_ns": 1844307.1354166667,
+        "min_ns": 1842005.1979166667,
+        "name": "quick-desktop/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 1306.6260017421603,
+        "median_ns": 1305.5783044726766,
+        "min_ns": 1301.6914916695591,
+        "name": "quick-desktop/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 1840884.4479166667,
+        "median_ns": 1839504.2291666667,
+        "min_ns": 1837582.0625,
+        "name": "quick-desktop/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 495.99997933474407,
+        "median_ns": 495.6301126602352,
+        "min_ns": 494.88616719451045,
+        "name": "quick-desktop/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 2849.0476224373574,
+        "median_ns": 2843.4399166034873,
+        "min_ns": 2834.294727152568,
+        "name": "quick-desktop/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 29929.44816468254,
+        "median_ns": 29858.346726190477,
+        "min_ns": 29824.182787698413,
+        "name": "progressive32/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 29315.54833984375,
+        "median_ns": 29266.953972868218,
+        "min_ns": 29227.40503875969,
+        "name": "progressive32/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 80.42388760508707,
+        "median_ns": 80.21463435828878,
+        "min_ns": 80.10060848623364,
+        "name": "progressive32/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 141.34122945876678,
+        "median_ns": 141.1585908680268,
+        "min_ns": 141.05541685473557,
+        "name": "progressive32/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 366.6672919925694,
+        "median_ns": 366.05779343582236,
+        "min_ns": 365.5087688840156,
+        "name": "progressive32/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      }
+    ],
+    "sample_rate": 44100,
+    "samples_per_frame": 735
+  },
+  "optimized_scalar": {
+    "architecture": "x86_64",
+    "coefficient_table_bytes": {
+      "progressive32": 0,
+      "quick-defaults": 538368,
+      "quick-desktop": 5467008
+    },
+    "results": [
+      {
+        "max_ns": 159384.37109375,
+        "median_ns": 159105.578125,
+        "min_ns": 158266.19661458334,
+        "name": "quick-defaults/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 17399.70992476852,
+        "median_ns": 17366.69212962963,
+        "min_ns": 17326.25460829493,
+        "name": "quick-defaults/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 86.78282074423771,
+        "median_ns": 86.28551747543774,
+        "min_ns": 85.96334371561525,
+        "name": "quick-defaults/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 16929.886120495496,
+        "median_ns": 16922.854307432433,
+        "min_ns": 16893.148789414416,
+        "name": "quick-defaults/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 143.1779026038485,
+        "median_ns": 140.69902543803698,
+        "min_ns": 140.0906692442751,
+        "name": "quick-defaults/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 146.10851174705837,
+        "median_ns": 144.96495443387838,
+        "min_ns": 143.60214348625257,
+        "name": "quick-defaults/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 2400981.5625,
+        "median_ns": 2398557.15625,
+        "min_ns": 2396132.109375,
+        "name": "quick-desktop/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 172572.14630681818,
+        "median_ns": 172486.31676136365,
+        "min_ns": 172180.59801136365,
+        "name": "quick-desktop/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 86.79624392431431,
+        "median_ns": 86.26778237865194,
+        "min_ns": 85.53055365492074,
+        "name": "quick-desktop/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 171093.27982954544,
+        "median_ns": 170961.79829545456,
+        "min_ns": 170513.18181818182,
+        "name": "quick-desktop/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 493.6071499078705,
+        "median_ns": 493.37863850151297,
+        "min_ns": 492.41365217962186,
+        "name": "quick-desktop/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 799.6770522388059,
+        "median_ns": 798.2470798744147,
+        "min_ns": 793.872433319221,
+        "name": "quick-desktop/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 486.3533791012839,
+        "median_ns": 485.0715787090933,
+        "min_ns": 484.3140417150975,
+        "name": "progressive32/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 28162.903218283584,
+        "median_ns": 28111.266791044774,
+        "min_ns": 28080.77332089552,
+        "name": "progressive32/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 27813.621296296296,
+        "median_ns": 27744.635799632353,
+        "min_ns": 27673.295036764706,
+        "name": "progressive32/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 79.60516592192408,
+        "median_ns": 79.37014056448028,
+        "min_ns": 79.17707849481663,
+        "name": "progressive32/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 142.8512601420844,
+        "median_ns": 142.21533453107816,
+        "min_ns": 142.05074692234848,
+        "name": "progressive32/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 152.31110637260875,
+        "median_ns": 151.7750905577141,
+        "min_ns": 150.03771655197247,
+        "name": "progressive32/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      }
+    ],
+    "sample_rate": 44100,
+    "samples_per_frame": 735,
+    "simd": false
+  },
+  "optimized_simd": {
+    "architecture": "x86_64",
+    "coefficient_table_bytes": {
+      "progressive32": 0,
+      "quick-defaults": 538368,
+      "quick-desktop": 5467008
+    },
+    "results": [
+      {
+        "max_ns": 223913.75919117648,
+        "median_ns": 158610.74609375,
+        "min_ns": 156994.3125,
+        "name": "quick-defaults/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 8435.84992977528,
+        "median_ns": 8414.12822309417,
+        "min_ns": 8396.667016219239,
+        "name": "quick-defaults/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 80.8161804717469,
+        "median_ns": 80.28767823499186,
+        "min_ns": 80.07201452501441,
+        "name": "quick-defaults/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 8081.387634408602,
+        "median_ns": 8068.989919354839,
+        "min_ns": 8061.679318669528,
+        "name": "quick-defaults/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 8163.994089673913,
+        "median_ns": 8157.538315217392,
+        "min_ns": 8143.411944143167,
+        "name": "quick-defaults/dft-block/Avx512(Avx512 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 9133.085310218978,
+        "median_ns": 9123.948043082524,
+        "min_ns": 9109.093067354368,
+        "name": "quick-defaults/dft-block/Sse2(Sse2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 9111.808252427185,
+        "median_ns": 9106.212909587379,
+        "min_ns": 9080.321958232445,
+        "name": "quick-defaults/dft-block/Sse4_2(Sse4_2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 8175.549428104575,
+        "median_ns": 8167.460529891305,
+        "min_ns": 8153.798233695652,
+        "name": "quick-defaults/dft-block/Avx2(Avx2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 146.35072344286607,
+        "median_ns": 146.17795714118657,
+        "min_ns": 144.59853136808823,
+        "name": "quick-defaults/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 128.53440327666576,
+        "median_ns": 126.27167897067241,
+        "min_ns": 125.20315838675214,
+        "name": "quick-defaults/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 2367579.578125,
+        "median_ns": 2360407.625,
+        "min_ns": 2357617.53125,
+        "name": "quick-desktop/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 84881.75555555556,
+        "median_ns": 84820.7798611111,
+        "min_ns": 84644.44722222222,
+        "name": "quick-desktop/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 80.52253883854759,
+        "median_ns": 80.34313470808785,
+        "min_ns": 79.79133886016426,
+        "name": "quick-desktop/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 83884.3125,
+        "median_ns": 83612.7173611111,
+        "min_ns": 83388.69097222222,
+        "name": "quick-desktop/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 83710.85416666667,
+        "median_ns": 83613.92847222222,
+        "min_ns": 83478.64513888888,
+        "name": "quick-desktop/dft-block/Avx512(Avx512 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 93124.21722560975,
+        "median_ns": 93024.12728658537,
+        "min_ns": 92730.60137195123,
+        "name": "quick-desktop/dft-block/Sse2(Sse2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 93055.4443597561,
+        "median_ns": 92865.30640243902,
+        "min_ns": 92701.85823170732,
+        "name": "quick-desktop/dft-block/Sse4_2(Sse4_2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 83686.80833333333,
+        "median_ns": 83557.98888888888,
+        "min_ns": 83393.0326388889,
+        "name": "quick-desktop/dft-block/Avx2(Avx2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 506.389810626519,
+        "median_ns": 497.7250165892502,
+        "min_ns": 496.90133910825494,
+        "name": "quick-desktop/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 681.0316472217178,
+        "median_ns": 675.4881349063401,
+        "min_ns": 673.4895964266475,
+        "name": "quick-desktop/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 486.5282620329528,
+        "median_ns": 485.40309506859955,
+        "min_ns": 484.0906560604105,
+        "name": "progressive32/construct",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 17669.49471830986,
+        "median_ns": 17650.431338028167,
+        "min_ns": 17594.09871495327,
+        "name": "progressive32/pipeline",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 17282.738479262673,
+        "median_ns": 17238.829128440368,
+        "min_ns": 17206.389764908257,
+        "name": "progressive32/ingest",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 79.7977175277695,
+        "median_ns": 79.6468576768685,
+        "min_ns": 79.35686369167284,
+        "name": "progressive32/dft-output",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 16741.75655691964,
+        "median_ns": 16716.3875,
+        "min_ns": 16667.68236111111,
+        "name": "progressive32/dft-block/Avx512(Avx512 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 27094.653102517987,
+        "median_ns": 27062.537769784172,
+        "min_ns": 26990.26348920863,
+        "name": "progressive32/dft-block/Sse2(Sse2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 22322.685081845237,
+        "median_ns": 22264.576368343194,
+        "min_ns": 22209.10576923077,
+        "name": "progressive32/dft-block/Sse4_2(Sse4_2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 16744.68359375,
+        "median_ns": 16725.344166666666,
+        "min_ns": 16695.50611111111,
+        "name": "progressive32/dft-block/Avx2(Avx2 { _private: () })",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 146.3484977462535,
+        "median_ns": 145.99876878455188,
+        "min_ns": 140.1866997962693,
+        "name": "progressive32/spectrum",
+        "round_ms": 120,
+        "rounds": 7
+      },
+      {
+        "max_ns": 138.19942532706835,
+        "median_ns": 134.64169426791614,
+        "min_ns": 133.90300069627938,
+        "name": "progressive32/decompose-track",
+        "round_ms": 120,
+        "rounds": 7
+      }
+    ],
+    "sample_rate": 44100,
+    "samples_per_frame": 735,
+    "simd": true
+  }
+}
